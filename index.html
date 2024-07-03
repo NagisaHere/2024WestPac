@@ -3,14 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
     <title>Document</title>
 </head>
 <body>
     <!-- Navbar -->
-    <div class="header">
-        <h1>Westpac Banking</h1>
-    </div>
+    <nav class="navbar">
+        <!--This is a container-->
+        <div class="navbar__container"> 
+            <!-- change the below to an image instead???-->
+            <a href="/First_Website/index.html" id="navbar__logo"></i>Westpac</a>
+            <!--A div class and id are just attributes used to target-->
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!--Unordered list (ul), I have no idea what it is used for-->
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/First_Website/index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/First_Website/tech.html" class="navbar__links">Posts</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="button">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Footer section-->
+
+    <script src="app.js"></script>
 </body>
 </html>
