@@ -12,5 +12,3 @@ Make navbar_links a bit more center (by like 200-300px???)<br/>
 update hover colour of Sign up button to #e55d58 <br/>
 Create Tree <br/>
 Create Dashboard for group activites and payments <br/><br/>
-
-Test linux commit
