@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tabstyling.css">
+</head>
+<body>
+    <div class="top-frame">
+        <a href="index.html" class="button">Welcome</a>
+        <a href="boardAndPieces.html" class="button">The Board</a>
+        <a href="basicRules.html" class="button">Basic Rules</a>
+        <a href="specialRules.html" class="button-grey">Special Rules</a>
+        <a href="whereToPlay.html" class="button-grey">Where to Play</a>
+    </div>
+
+    <!-- 
+        Image Source:
+        White Book Page with Black Background by Unsplash. 
+        Link: https://unsplash.com/photos/white-book-page-with-black-background-DCzpr09cTXY
+    -->
+    <img src="images/page3image.png" alt="alt text here if gonna use it">
+    <div class="page-title">
+        The Rules of the Game
+    </div>
+
+    <div class="textbox">
+        The next step is knowing the fundamental rules of chess. Click on any of the the tabs to start learning the rules!
+    </div>
+
+    <!-- 
+        All 2D chessboard images and icons in this page were sourced from 365Chess.com board editor.
+        Link: https://www.365chess.com/board_editor.php 
+    -->
+    <div class="tab-interface">
+        <div class="tab-bar">
+            <button class="tab-button1" onclick="displayTab(event, 'moving')">Moving</button>
+            <button class="tab-button0" onclick="displayTab(event, 'capturing')">Capturing</button>
+            <button class="tab-button0" onclick="displayTab(event, 'checking')">Checking</button>
+            <button class="tab-button0" onclick="displayTab(event, 'checkmating')">How to Win</button>
+        </div>
+        <div id="capturing" class="tab-page">
+            <div id="capturing" class="tab-textbox">
+                When a piece is "captured", that piece is taken off the board for the rest of the game.
+                <br><br>
+                You can capture an opponent's piece by moving one of your pieces onto that piece.
+                <br><br>
+                Pawns have a special way of capturing - instead of moving one square up vertically like they normally do,
+                they capture pieces by moving diagonally up the board.
+                <br><br>
+                Capturing your opponent's pieces will weaken your opponent's army and give you greater chances of winning the game.
+            </div>
+            <div class="tab-board-container">
+                <img src="images/emptyboard.png" class="tab-chess-board">
+
+                <img src="images/rookBlack.png" class="chess-piece-icon" id="rook-black-2">
+                <img src="images/bishopWhite.png" class="chess-piece-icon" id="bishop-white-2">
+                
+                <button class="play-button" id="capturing-animation-play-button" onclick="animate_capturing_tab()">
+                    <img src="images/playButton.png">
+                </button>            
+            </div>
+        </div>
+        <div id="checking" class="tab-page">
+            <div class="tab-textbox">
+                The King is your most important chess piece, and you must protect it at all costs.
+                If your king is under attack by one of your opponent's pieces, on your move you must make a move that protects your king from the attack.
+                <br><br>
+                In the example shown here, white just moved their rook and now black's king is in the line of sight of the rook,
+                which means on black's next move they must find a way to remove the attack on the king.
+                <br><br>
+                Here black can either move the king out of the rook's line of sight, or shield the rook from the king using the knight, 
+                or capture the rook using the bishop.
+            </div>
+            <div class="tab-board-container">
+                <img src="images/checkingImage.png" class="tab-chess-board">
+            </div>
+        </div>
+        <div id="checkmating" class="tab-page">
+            <div class="tab-textbox">
+                If you put your opponent's king in check, and they can't do anything to get their
+                king out of attack, then that is called "checkmate" and you win!
+                <br><br>
+                In this image here, suppose white just moved their queen up to the top of the board.
+                <br><br>
+                Black can't move their king anywhere because any square it moves to, it will still be under attack by a piece.
+                <br><br>
+                They also can't block the attack with any pieces. So they are checkmated and white wins.
+            </div>
+            <div class="tab-board-container">
+                <img src="images/checkmatingImage.png" class="tab-chess-board">
+            </div>
+        </div>
+        <div id="moving" class="tab-page">
+            <div class="tab-textbox">
+                At the start of a chess game, each player is randomly assigned a colour (white or black).
+                <br><br>
+                The player with the white pieces go first, and players take turns moving one of their pieces.
+                <br><br>
+                You can't jump over other pieces (unless you're moving the knight), and you can't make
+                a move that puts your king under attack.
+                <br><br>
+                The animation here shows an example of how the first few moves of a chess game could go.
+
+            </div>
+            <div class="tab-board-container">
+                <img src="images/movingAnimationBoard.png" class="tab-chess-board">
+
+                <img src="images/pawnWhite.png" class="chess-piece-icon" id="e-pawn-white">
+                <img src="images/pawnWhite.png" class="chess-piece-icon" id="d-pawn-white">
+                <img src="images/pawnBlack.png" class="chess-piece-icon" id="e-pawn-black">
+                <img src="images/pawnBlack.png" class="chess-piece-icon" id="d-pawn-black">
+                <img src="images/knightBlack.png" class="chess-piece-icon" id="knight-black">
+                <img src="images/knightWhite.png" class="chess-piece-icon" id="knight-white">
+                <img src="images/bishopWhite.png" class="chess-piece-icon" id="bishop-white">
+                <img src="images/bishopBlack.png" class="chess-piece-icon" id="bishop-black">
+                
+                <button class="play-button" id="moving-animation-play-button" onclick="animate_moving_tab()">
+                    <img src="images/playButton.png">
+                </button>            
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-button-frame-2">
+        <a href="boardAndPieces.html" class="button-grey">Back</a>
+        <a href="specialRules.html" class="button">Next</a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
