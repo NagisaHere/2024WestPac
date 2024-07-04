@@ -1,0 +1,42 @@
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #da1710;
+    padding: 2rem;
+}
+
+.welcome h1 {
+    color: white;
+}
+
+.main {
+    display: flex;
+    background-color: white;
+}
+
+.main__border {
+    border-left: 6px solid black;
+    height: 200px;
+    left: 50%;
+}
+
+
+
+progress__saving {
+    color: lightblue;
+  }
+
+progress__saving::-moz-progress-bar {
+background: lightblue;
+}
+
+
+progress__saving::-webkit-progress-value {
+background: red;
+}
+
+
+progress__saving::-webkit-progress-bar {
+background: blue;
+}

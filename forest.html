@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="forest.css">
     <title>Forest</title>
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!--This is a container-->
+        <div class="navbar__container"> 
+            <!-- need to specify length -->
+             <a href="./index.html">
+                <img id="logo" src="./images/Westpac_logo.svg.png" alt="Westpac Logo">
+            </a>
+            <!--A div class and id are just attributes used to target-->
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!--Unordered list (ul), I have no idea what it is used for-->
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="./index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="./forest.html" class="navbar__links">Forest</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="./planner.html" class="navbar__links">Planner</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="button">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="welcome">
+        <h1>Welcome to your Forest</h1>
+    </div>
+
+    <div class="main">
+        <div class="left">
+            <div class="account">
+                <h1>Connected Savings Account</h1>
+            </div>
+            <div class="progressbar">
+                <label for="progress__saving">Savings Progress</label>
+                <progress id="progress__saving" value="45" max="100"> 45% </progress>
+
+            </div>
+            <div class="forest">
+                <div class="display">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="main__border">
+
+        </div>
+        <div class="leaderboard">
+            <h1>Leaderboards</h1>
+        </div>
+    </div>
+
     
 </body>
 </html>
