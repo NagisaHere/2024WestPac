@@ -18,7 +18,6 @@ navbar colour for links are #181b25
 
 /*Navbar configuration*/
 .navbar {
-    background: #da1710;
     height: 80px;
     /*flex brings elements onto a "row"
     essentially positioning things like a box array*/
@@ -51,6 +50,7 @@ navbar colour for links are #181b25
 }
 
 /*# is used for html elements with id*/
+/* This is actually depreciated */
 #navbar__logo {
     background-color: #FF8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
@@ -69,6 +69,12 @@ navbar colour for links are #181b25
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+}
+
+/* I need this logo to be center*/
+#logo {
+    width: 280px;
+    height: 70px;
 }
 
 .fa-gem {
@@ -231,4 +237,22 @@ navbar colour for links are #181b25
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+.main {
+    background: #da1710;
+}
+
+
+
+#footer__line {
+    border: none;
+    height: 10px; 
+    background-color: #da1710;
+}
+
+.footer {
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 8rem;
 }
