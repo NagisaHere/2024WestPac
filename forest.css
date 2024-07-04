@@ -46,3 +46,8 @@
 .leaderboard h1 {
     width: 100%;
 }
+
+.leaderboard__item {
+    height: 50%;
+    background-color: lightgreen;
+}
