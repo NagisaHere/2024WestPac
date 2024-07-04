@@ -1,5 +1,5 @@
 # 2024WestPac
-Authors: Ryan Wang, Jackie Cheng <br/>
+Authors: Ryan Wang, Jackie Cheng, Ethan Worth <br/>
 
 To Do: <br/>
 ~~Finish roadmap/mindmap/diagram of features~~<br/>
