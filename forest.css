@@ -21,22 +21,28 @@
     left: 50%;
 }
 
+.left {
+    margin: 2rem 15rem;
+}
 
+.progressbar {
+    text-align: center;
+}
 
-progress__saving {
-    color: lightblue;
+.progress__saving {
+    width: 100%;
+    height: 3rem;
+    accent-color: green;
+    background-image: green;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 
-progress__saving::-moz-progress-bar {
-background: lightblue;
+.leaderboard {
+    margin: 0 auto;
 }
 
-
-progress__saving::-webkit-progress-value {
-background: red;
-}
-
-
-progress__saving::-webkit-progress-bar {
-background: blue;
+.leaderboard h1 {
+    width: 100%;
 }
