@@ -10,7 +10,7 @@
     color: white;
 }
 
-.main {
+.forest__main {
     display: flex;
     background-color: white;
 }
@@ -21,8 +21,12 @@
     left: 50%;
 }
 
-.left {
-    margin: 2rem 15rem;
+.account {
+    display:
+}
+
+.account h1 {
+    background-color: #2A2E42;
 }
 
 .progressbar {
@@ -39,8 +43,23 @@
     appearance: none;
   }
 
-.leaderboard {
-    margin: 0 auto;
+
+/* board section */
+
+.move-marker {
+    background-color: #000000;
+    border-radius: 50%; /* Turns it into a circle */
+    opacity: 0.6;
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+/* Right of page */
+.forest__leaderboard {
+    display: flex;
 }
 
 .leaderboard h1 {

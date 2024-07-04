@@ -44,37 +44,41 @@
         <h1>Welcome to your Forest</h1>
     </div>
 
-    <div class="main">
-        <div class="left">
-            <div class="account">
-                <h1>Connected Savings Account</h1>
-            </div>
-            <div class="progressbar">
-                <p>This Week: $30/50</p>
-                <progress class="progress__saving" min="0" max="100" value="63"></progress>
-            </div>
-            <div class="forest">
-                <div class="display">
-                    bonjour
+    <div class="forest__main">
+        <div class="account">
+            <h1>Connected Savings Account</h1>
+            <p>Everyday Saver: $2398.75</p>
+        </div>
+        <div class="progressbar">
+            <p>This Week: $30/50</p>
+            <progress class="progress__saving" min="0" max="100" value="63"></progress>
+        </div>
+        <div class="forest">
+            <div class="display">
+                <div class="interactive-board-image-container" id="rook-popup-board">
+                    <img src="images/grid.png" class="interactive-board-image">
+        
+                    <div class="moveable-piece" id="moveable-rook" onclick="respondToClick('rook', 'rook-popup-board', 'moveable-rook')">
+                        <img src="images/rookWhite.png" class="chess-piece-icon">
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="main__border"></div>
 
-        <div class="leaderboard">
-            <h1>Leaderboards</h1>
-            <p>Shared Goal: Bahamas Trip</p>
-            <ul class="leaderboard__list">
-                <li class="leaderboard__item">
-                    <div class="name">hello</div>
-                    <div class="amount">100</div>
-                    <div class="rank">Forest Master</div>
-                </li>
-            </ul>
-        </div>
     </div>
 
+    <div class="forest__leaderboard">
+        <h1>Leaderboards</h1>
+        <p>Shared Goal: Bahamas Trip</p>
+        <ul class="leaderboard__list">
+            <li class="leaderboard__item">
+                <div class="name">hello</div>
+                <div class="amount">100</div>
+                <div class="rank">Forest Master</div>
+            </li>
+        </ul>
+    </div>
     <hr id="footer__line">
 
     <!-- Footer section -->
