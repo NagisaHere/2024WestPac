@@ -21,6 +21,9 @@ Make new goal screen page<br/>
 - goal history
 <br/>
 
+
+
 Ryan: Forest + UI Designer
 Jackie: main page + forest (look at chess repo)
 Ethan: main page + goal screen
+
