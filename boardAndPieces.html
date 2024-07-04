@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/interactive-board.css">
+</head>
+<body>
+    <div class="top-frame">
+        <a href="index.html" class="button">Welcome</a>
+        <a href="boardAndPieces.html" class="button">The Board</a>
+        <a href="basicRules.html" class="button-grey">Basic Rules</a>
+        <a href="specialRules.html" class="button-grey">Special Rules</a>
+        <a href="whereToPlay.html" class="button-grey">Where to Play</a>
+    </div>
+
+    <!-- 
+        Image Source:
+        3D HD Chess Game Wallpaper by Wallpapers.com. 
+        Link: https://wallpapers.com/wallpapers/3d-hd-chess-game-n8g5nghsevozvc6s.html
+    -->
+    <img src="images/page2image.png" alt="alt text here if gonna use it">
+    <div class="page-title">
+        The Board and the Pieces
+    </div>
+
+    <div class="textbox">
+        The first step to learning chess is understanding how the board is set up and what the pieces do.
+    </div>
+
+    <div class="interactive-board-container">
+        <div class="interactive-board-textbox">
+            Chess is played on an 8x8 board with 2 players.
+            Each player is given 8 Pawns, 2 Rooks, 2 Knights, 2 Bishops, a King, and a Queen. The board here shows the starting setup of the pieces.
+
+            Click on any of the pieces to see what it is and how it moves!
+        </div>
+
+        <!-- 
+        All 2D chessboard images and icons in this page were sourced from 365Chess.com board editor.
+        Link: https://www.365chess.com/board_editor.php 
+        -->
+        <div class="interactive-board-image-container">
+            <img src="images/startingposition.png" class="interactive-board-image" id="test-board">
+
+            <!-- Black Pieces -->
+            <button class="piece-button" id="rook-popup-button-1" onclick="open_popup('rook-popup', 'moveable-rook')"></button> 
+            <button class="piece-button" id="knight-popup-button-1" onclick="open_popup('knight-popup', 'moveable-knight')"></button> 
+            <button class="piece-button" id="bishop-popup-button-1" onclick="open_popup('bishop-popup', 'moveable-bishop')"></button> 
+            <button class="piece-button" id="queen-popup-button-1" onclick="open_popup('queen-popup', 'moveable-queen')"></button> 
+            <button class="piece-button" id="king-popup-button-1" onclick="open_popup('king-popup', 'moveable-king')"></button> 
+            <button class="piece-button" id="bishop-popup-button-2" onclick="open_popup('bishop-popup', 'moveable-bishop')"></button> 
+            <button class="piece-button" id="knight-popup-button-2" onclick="open_popup('knight-popup', 'moveable-knight')"></button>
+            <button class="piece-button" id="rook-popup-button-2" onclick="open_popup('rook-popup', 'moveable-rook')"></button>
+            <button class="pawns-button" id="pawn-row-button-1" onclick="open_popup('pawn-popup', 'moveable-pawn')"></button>
+
+            <!-- White Pieces -->
+            <button class="piece-button" id="rook-popup-button-3" onclick="open_popup('rook-popup', 'moveable-rook')"></button> 
+            <button class="piece-button" id="knight-popup-button-3" onclick="open_popup('knight-popup', 'moveable-knight')"></button> 
+            <button class="piece-button" id="bishop-popup-button-3" onclick="open_popup('bishop-popup', 'moveable-bishop')"></button> 
+            <button class="piece-button" id="queen-popup-button-2" onclick="open_popup('queen-popup', 'moveable-queen')"></button> 
+            <button class="piece-button" id="king-popup-button-2" onclick="open_popup('king-popup', 'moveable-king')"></button> 
+            <button class="piece-button" id="bishop-popup-button-4" onclick="open_popup('bishop-popup', 'moveable-bishop')"></button> 
+            <button class="piece-button" id="knight-popup-button-4" onclick="open_popup('knight-popup', 'moveable-knight')"></button>
+            <button class="piece-button" id="rook-popup-button-4" onclick="open_popup('rook-popup', 'moveable-rook')"></button>
+            <button class="pawns-button" id="pawn-row-button-2" onclick="open_popup('pawn-popup', 'moveable-pawn')"></button>
+        </div>
+    </div>
+
+    <div class="popup-box" id="rook-popup">
+        <div class="popup-textbox">
+            This is the rook. It moves straight, any number of squares vertically or horizontally. 
+            <br><br>
+            You can try moving it yourself by clicking on the piece and then clicking on the board where you want to move it to.
+        </div>
+
+        <div class="interactive-board-image-container" id="rook-popup-board">
+            <img src="images/emptyboard.png" class="interactive-board-image">
+
+            <div class="moveable-piece" id="moveable-rook" onclick="respondToClick('rook', 'rook-popup-board', 'moveable-rook')">
+                <img src="images/rookWhite.png" class="chess-piece-icon">
+            </div>
+        </div>
+
+        <button class="close-button" onclick="close_popup('rook-popup')">
+            <img src="images/closeButton.png" class="close-icon">
+        </button>
+    </div>
+
+    <div class="popup-box" id="pawn-popup">
+        <div class="popup-textbox">
+            This is the pawn. It moves 1 square up, but on its first move, it can move 2 squares up.
+            <br><br>
+            You can try moving it yourself by clicking on the piece and then clicking on the board where you want to move it to.
+        </div>
+
+        <div class="interactive-board-image-container" id="pawn-popup-board">
+            <img src="images/emptyboard.png" class="interactive-board-image">
+
+            <div class="moveable-piece" id="moveable-pawn" onclick="respondToClick('pawn', 'pawn-popup-board', 'moveable-pawn')">
+                <img src="images/pawnWhite.png" class="chess-piece-icon">
+            </div>
+        </div>
+
+        <button class="close-button" onclick="close_popup('pawn-popup')">
+            <img src="images/closeButton.png" class="close-icon">
+        </button>
+    </div>
+
+    <div class="popup-box" id="knight-popup">
+        <div class="popup-textbox">
+            This is the knight. It moves in an L shape, and can jump over pieces. 
+            <br><br>
+            You can try moving it yourself by clicking on the piece and then clicking on the board where you want to move it to.
+        </div>
+
+        <div class="interactive-board-image-container" id="knight-popup-board">
+            <img src="images/emptyboard.png" class="interactive-board-image">
+
+            <div class="moveable-piece" id="moveable-knight" onclick="respondToClick('knight', 'knight-popup-board', 'moveable-knight')">
+                <img src="images/knightWhite.png" class="chess-piece-icon">
+            </div>
+        </div>
+
+        <button class="close-button" onclick="close_popup('knight-popup')">
+            <img src="images/closeButton.png" class="close-icon">
+        </button>
+    </div>
+
+    <div class="popup-box" id="bishop-popup">
+        <div class="popup-textbox">
+            This is the bishop. It moves any number of squares diagonally.
+            <br><br>
+            You can try moving it yourself by clicking on the piece and then clicking on the board where you want to move it to.
+        </div>
+
+        <div class="interactive-board-image-container" id="bishop-popup-board">
+            <img src="images/emptyboard.png" class="interactive-board-image">
+
+            <div class="moveable-piece" id="moveable-bishop" onclick="respondToClick('bishop', 'bishop-popup-board', 'moveable-bishop')">
+                <img src="images/bishopWhite.png" class="chess-piece-icon">
+            </div>
+        </div>
+
+        <button class="close-button" onclick="close_popup('bishop-popup')">
+            <img src="images/closeButton.png" class="close-icon">
+        </button>
+    </div>
+
+    <div class="popup-box" id="queen-popup">
+        <div class="popup-textbox">
+            This is the queen. It can move straight and diagonally, like a rook and bishop combined.
+            <br><br>
+            You can try moving it yourself by clicking on the piece and then clicking on the board where you want to move it to.
+        </div>
+
+        <div class="interactive-board-image-container" id="queen-popup-board">
+            <img src="images/emptyboard.png" class="interactive-board-image">
+
+            <div class="moveable-piece" id="moveable-queen" onclick="respondToClick('queen', 'queen-popup-board', 'moveable-queen')">
+                <img src="images/queenWhite.png" class="chess-piece-icon">
+            </div>
+        </div>
+
+        <button class="close-button" onclick="close_popup('queen-popup')">
+            <img src="images/closeButton.png" class="close-icon">
+        </button>
+    </div>
+
+    <div class="popup-box" id="king-popup">
+        <div class="popup-textbox">
+            This is the king. It can move 1 square in any direction.
+            <br><br>
+            You can try moving it yourself by clicking on the piece and then clicking on the board where you want to move it to.
+        </div>
+
+        <div class="interactive-board-image-container" id="king-popup-board">
+            <img src="images/emptyboard.png" class="interactive-board-image">
+
+            <div class="moveable-piece" id="moveable-king" onclick="respondToClick('king', 'king-popup-board', 'moveable-king')">
+                <img src="images/kingWhite.png" class="chess-piece-icon">
+            </div>
+        </div>
+
+        <button class="close-button" onclick="close_popup('king-popup')">
+            <img src="images/closeButton.png" class="close-icon">
+        </button>
+    </div>
+
+    <div class="bottom-button-frame">
+        <a href="index.html" class="button-grey">Back</a>
+        <a href="basicRules.html" class="button">Next</a>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/interactiveboard.js"></script>
+</body>
+</html>
