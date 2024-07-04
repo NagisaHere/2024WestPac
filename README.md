@@ -27,3 +27,4 @@ Ryan: Forest + UI Designer
 Jackie: main page + forest (look at chess repo)
 Ethan: main page + goal screen
 
+moved to ryan v2
