@@ -159,7 +159,7 @@ img {
     padding: 4px 16px; /* padding: y, x */
     font-size: 16px;
     cursor: pointer; /* Makes the cursor change to the hand icon when hovering over the button */
-    background-color: #0CA789;
+    background-color: #17b5b5;
     color: #000000; /* text color */
     text-align: center; /* centers the text */
     border: none;
@@ -287,7 +287,7 @@ img {
 }
 /*text coverage*/
 .container {
-    background-color: #49f47f;
+    background-color: #ffffff;
     height: 20%;
     width: 92%; /* textbox thickness*/
     padding: 0;
@@ -299,15 +299,15 @@ img {
 }
 
 .spaced {
-    padding-left: 11%;
+    padding-left: 6%;
     padding-right: 4.25%;
 }
 
 .button2 {
     margin-left: auto;
     margin-right: auto;
-    width: 110px; /* button width */
-    padding: 4px 16px; /* padding: y, x */
+    width: 200px; /* button width */
+    padding: 20px 20px; /* padding: y, x */
     font-size: 16px;
     cursor: pointer; /* Makes the cursor change to the hand icon when hovering over the button */
     background-color: #0CA789;
