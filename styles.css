@@ -362,6 +362,7 @@ navbar colour for links are #181b25
 }
 
 .footer {
-    margin-top: 1%;
-    margin-left: 10%;
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 8rem;
 }

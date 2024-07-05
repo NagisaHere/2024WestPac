@@ -1,0 +1,319 @@
+.textbox {
+    padding: 50px;
+    width: 70%;
+    height: 20%;
+    background-color: #1e1d1d;
+    color: #ffffff; /* text color */
+    font-size: 24px;
+    font-family: sans-serif;
+
+    position: relative;
+    /* position of the text box */
+    left: 50%;
+    transform: translate(-50%);
+}
+.textbox2 {
+    margin-top: 20px; /* Puts it 20 pixels under the image */
+    padding: 50px;
+    width: 70%;
+    height: 0px;
+    background-color: #161b4b;
+    color: #ffffff; /* text color */
+    font-size: 20px;
+    font-family: sans-serif;
+
+    position: relative;
+    /* position of the text box */
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.textbox {
+    border-radius: 25px;
+    padding: 50px;
+    width: 70%;
+    height: 20%;
+    background-color: #1e1d1d;
+    color: #ffffff; /* text color */
+    font-size: 24px;
+    font-family: sans-serif;
+
+    position: relative;
+    /* position of the text box */
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.chess-com-icon-container {
+    border: 1px solid #000000; 
+    padding: 20px;
+    width: 120px;
+    height: 120px; 
+    background-color: #1e1d1d;
+    border-radius: 10px; /* rounds off corners */
+
+    position: absolute;
+    /* position of the container */
+    left: 30%;
+    transform: translate(-50%, 0%);
+    margin-top: 20px; /* places it 20px under the text box on page 5 */
+
+    /* Puts the icon in the center of the container (along both axes)*/
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.lichess-org-icon-container {
+    border: 1px solid #000000; 
+    padding: 20px;
+    width: 120px;
+    height: 120px; 
+    background-color: #1e1d1d;
+    border-radius: 10px; /* rounds off corners */
+
+    position: relative;
+    /* position of the container */
+    left: 70%;
+    transform: translate(-50%, 0%);
+    margin-top: 20px; /* places it 20px under the text box on page 5 */
+
+    /* Puts the icon in the center of the container (along both axes)*/
+    display: flex;  
+    justify-content: center; 
+    align-items: center;
+}
+
+body {
+    background-color: #ffffff; /* background of the page */
+}
+
+.page-content-container {
+    background-color: #ff0000; /* background color of the page */
+}
+
+/* This refers to the image on the top of each page under the page switch buttons. */
+img {
+    width: 100%;
+    position: relative;
+}
+
+.page-title {
+    position: relative;
+    top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* Styles the semi-transparent background behind the text */
+    background-color: #ff0000;
+    width: 100%;
+    top: 0;
+    color: #ffffff; /* text color */
+    font-size: 48px;
+    font-family: sans-serif;
+    text-align: center; /* Centers text horizontally */
+}
+
+.chess-website-icon {
+    width: 80%;
+    height: 80%;
+}
+
+.chess-piece-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    /* specific pixel positions depend on the id of the icon element */
+}
+
+.top-frame {
+    /* Puts the buttons in the center of the frame (along both axes)*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+
+    height: 30px;
+    background-color: #1e1d1d;
+    position: relative; /* Sets this element as a reference point for placing other elements */
+    width: 100%;
+}
+
+.bottom-button-frame {
+    background-color: #2d2d2d;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    width: 100%;
+
+    /* Puts the buttons in the center of the frame */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    margin-right: 5%; /* distance between buttons.*/
+    width: 110px; /* button width */
+    padding: 4px 16px; /* padding: y, x */
+    font-size: 16px;
+    cursor: pointer; /* Makes the cursor change to the hand icon when hovering over the button */
+    background-color: #17b5b5;
+    color: #000000; /* text color */
+    text-align: center; /* centers the text */
+    border: none;
+    border-radius: 4px; /* rounds off corners */
+    text-decoration: none; /* removes underline from link */
+}
+
+.button:hover {
+    background-color: #45a049; /* changes color when u hover over the button */
+}
+
+.button-grey {
+    margin-right: 5%; /* distance between buttons. Set to 5% to support mobile */
+    width: 110px; /* button width */
+    padding: 4px 16px; /* padding: y, x */
+    font-size: 16px;
+    cursor: pointer; /* Makes the cursor change to the hand icon when hovering over the button */
+    background-color: #808080;
+    color: #000000; /* text color */
+    text-align: center; /* centers the text */
+    border: none;
+    border-radius: 4px; /* rounds off corners */
+    text-decoration: none; /* removes underline from link */
+}
+
+.button-grey:hover {
+    background-color: #bab9b9; /* changes color when u hover over the button */
+}
+
+/* Media queries to fit the buttons and button frames on smaller screens. */
+@media screen and (max-width: 800px) {
+    .button {
+        width: 20%;
+        font-size: 12px;
+    }
+    .button-grey {
+        width: 20%;
+        font-size: 12px;
+    }
+    .top-frame {
+        height: 50px;
+    }
+}
+@media screen and (min-width: 801px) {
+    .button {
+        width: 82px;
+        font-size: 14px;
+    }
+    .button-grey {
+        width: 82px;
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 1050px) {
+    .button {
+        width: 120px;
+    }
+    .button-grey {
+        width: 120px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .top-frame {
+        height: 75px;
+    }
+}
+
+/* Media queries to fit the page title on smaller screens. */
+@media screen and (max-width: 800px) {
+    .page-title {
+        font-size: 36px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .page-title {
+        font-size: 24px;
+    }
+}
+
+/* Media queries to fit the chess website icons on smaller screens. */
+@media screen and (min-width: 800px) {
+    .chess-com-icon-container {
+        width: 200px;
+        height: 200px; 
+    }
+    .lichess-org-icon-container {
+        width: 200px;
+        height: 200px; 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .chess-com-icon-container {
+        width: 300px;
+        height: 300px; 
+    }
+    .lichess-org-icon-container {
+        width: 300px;
+        height: 300px; 
+    }
+}
+.event-box {
+    height: 5rem;
+    padding-left: 20%;
+    width: 26%;
+    float: center;
+    clear: both;
+    background-color: #1b9d9f;
+    padding: 0;
+    margin-top: 0;
+    text-align: center;
+    background: url(/assets/images/placeholderimg4.jpg);
+}
+
+.event-info {
+    padding-left: 30%;
+    background-color: #ffffff;
+    float: center;
+    clear: both;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+/*text coverage*/
+.container {
+    background-color: #ffffff;
+    height: 20%;
+    width: 92%; /* textbox thickness*/
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 0rem;
+    padding-left: 30;
+}
+
+.spaced {
+    padding-left: 6%;
+    padding-right: 4.25%;
+}
+
+.button2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px; /* button width */
+    padding: 20px 20px; /* padding: y, x */
+    font-size: 16px;
+    cursor: pointer; /* Makes the cursor change to the hand icon when hovering over the button */
+    background-color: #0CA789;
+    color: #000000; /* text color */
+    text-align: center; /* centers the text */
+    border: none;
+    border-radius: 4px; /* rounds off corners */
+    text-decoration: none; /* removes underline from link */
+}

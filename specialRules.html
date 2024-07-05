@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tabstyling.css">
+</head>
+<body>
+    <div class="top-frame">
+        <a href="idx2.html" class="button">Welcome</a>
+        <a href="boardAndPieces.html" class="button">The Board</a>
+        <a href="basicRules.html" class="button">Basic Rules</a>
+        <a href="specialRules.html" class="button">Special Rules</a>
+        <a href="whereToPlay.html" class="button-grey">Where to Play</a>
+    </div>
+
+    <!-- 
+        Image Source:
+        Rooks on the Seventh, Revisited by Daniel Naroditsky. 
+        Link: https://www.chess.com/article/view/rooks-on-the-seventh-revisited
+    -->
+    <img src="images/page4image.png" alt="alt text here if gonna use it">
+    <div class="page-title">
+        Special Chess Rules
+    </div>
+
+    <div class="textbox">
+        Finally, there are some special chess rules that you should learn.
+    </div>
+
+    <!-- 
+        All 2D chessboard images and icons in this page were sourced from 365Chess.com board editor.
+        Link: https://www.365chess.com/board_editor.php 
+    -->
+    <div class="tab-interface">
+        <div class="tab-bar">
+            <button class="tab-button1" onclick="displayTab(event, 'castling')">Castling</button>
+            <button class="tab-button0" onclick="displayTab(event, 'promoting')">Promoting</button>
+            <button class="tab-button0" onclick="displayTab(event, 'enpassant')">En Passant</button>
+            <button class="tab-button0" onclick="displayTab(event, 'stalemate')">Stalemate</button>
+        </div>
+        <div id="promoting" class="tab-page">
+            <div class="tab-textbox">
+                If a pawn makes it all the way to the end of the board, it can be turned into any other piece! (except for the king)
+                <br><br>
+                Usually you want to promote your pawn to a queen, since it is the most powerful piece,
+                although sometimes promoting to a different piece is necessary to prevent stalemate (see the "special rules" page)
+                <br><br>
+                Promotion is very powerful and is often the deciding factor of a game, so you should
+                try your best to put pressure on the opponent and march your pawns forward.
+            </div>
+            <div class="tab-board-container">
+                <img src="images/promotionImage.png" class="tab-chess-board">
+                <img src="images/pawnWhite.png" class="chess-piece-icon" id="promotion-pawn-white">
+                <img src="images/pawnBlack.png" class="chess-piece-icon" id="promotion-pawn-black">
+                <img src="images/queenWhite.png" class="chess-piece-icon" id="promotion-queen">
+
+                <button class="play-button" id="promotion-animation-play-button" onclick="animate_promoting()">
+                    <img src="images/playButton.png">
+                </button>           
+            </div>
+        </div>
+        <div id="enpassant" class="tab-page">
+            <div class="tab-textbox">
+                Normally, pawns can only capture pieces that are diagonally in front of it. However, 
+                "En Passant" is a special type of move where a pawn can capture a pawn that is right next to it! 
+                <br><br>
+                You can only perform en passant if all the following conditions are met:
+                <br><br>
+                - Your pawn is on the 4th row from the top
+                <br><br>
+                - Your opponent just moved their pawn 2 spaces (Not 1!) from the 2nd row from the top down next to your pawn.
+                <br><br>
+                Watch the animation here to see exactly how en passant works.
+
+            </div>
+            <div class="tab-board-container">
+                <img src="images/enpassantPosition.png" class="tab-chess-board">
+                <img src="images/pawnWhite.png" class="chess-piece-icon" id="passant-pawn-white">
+                <img src="images/pawnBlack.png" class="chess-piece-icon" id="passant-pawn-black">
+
+                <button class="play-button" id="enpassant-animation-play-button" onclick="animate_enpassant()">
+                    <img src="images/playButton.png">
+                </button>     
+            </div>
+        </div>
+        <div id="stalemate" class="tab-page">
+            <div class="tab-textbox">
+                Stalemate is a situation where a player has no possible move to make on their turn.
+                In the image here, suppose it is black's turn. Black's pawn is blocked and can't move,
+                and the black king has no safe squares to move to either, so black is unable to make a move.
+                <br><br>
+                When Stalemate happens, the game is a draw, even if one player has more pieces left than the other.
+                <br><br>
+                Many people confuse Stalemate with Checkmate. Stalemate is different because the king is not under attack.
+            </div>
+            <div class="tab-board-container">
+                <img src="images/stalemateImage.png" class="tab-chess-board">
+            </div>
+        </div>
+        <div id="castling" class="tab-page">
+            <div class="tab-textbox">
+                Castling is a special move where the rook slides over to the king, and then the king moves to the other side of the rook. 
+                Even though castling involves 2 pieces, it only takes 1 turn.
+                Castling is a great way to keep your king safe and you should do it early in a game.
+                <br><br>
+                You can castle if all of the following are true:
+                <br><br>
+                - Neither the rook nor the king has moved,
+                <br>
+                - Your king is not in check,
+                <br>
+                - There are no pieces in between your king and the rook,
+                <br>
+                - There are no squares in between your king and the rook that is in the line of sight of any of your opponent's pieces.
+            </div>
+            <div class="tab-board-container">
+                <img src="images/castlingImage.png" class="tab-chess-board">
+                <img src="images/kingWhite.png" class="chess-piece-icon" id="castling-king-white">
+                <img src="images/rookWhite.png" class="chess-piece-icon" id="castling-rook-white">
+
+                <button class="play-button" id="castling-animation-play-button" onclick="animate_castling()">
+                    <img src="images/playButton.png">
+                </button>     
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="bottom-button-frame-2">
+        <a href="basicRules.html" class="button-grey">Back</a>
+        <a href="whereToPlay.html" class="button">Next</a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
