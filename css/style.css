@@ -1,23 +1,35 @@
 .textbox {
-    border: 1px solid #333; 
     padding: 50px;
     width: 70%;
-    height: 30%;
+    height: 20%;
     background-color: #1e1d1d;
     color: #ffffff; /* text color */
-    border-radius: 10px; /* rounds off corners */
     font-size: 24px;
     font-family: sans-serif;
 
     position: relative;
     /* position of the text box */
+    left: 50%;
+    transform: translate(-50%);
+}
+.textbox2 {
     margin-top: 20px; /* Puts it 20 pixels under the image */
+    padding: 50px;
+    width: 70%;
+    height: 0px;
+    background-color: #805050;
+    color: #ffffff; /* text color */
+    font-size: 20px;
+    font-family: sans-serif;
+
+    position: relative;
+    /* position of the text box */
     left: 50%;
     transform: translate(-50%);
 }
 
 .chess-com-icon-container {
-    border: 1px solid #333; 
+    border: 1px solid #000000; 
     padding: 20px;
     width: 120px;
     height: 120px; 
@@ -37,7 +49,7 @@
 }
 
 .lichess-org-icon-container {
-    border: 1px solid #333; 
+    border: 1px solid #000000; 
     padding: 20px;
     width: 120px;
     height: 120px; 
@@ -51,17 +63,17 @@
     margin-top: 20px; /* places it 20px under the text box on page 5 */
 
     /* Puts the icon in the center of the container (along both axes)*/
-    display: flex;
+    display: flex;  
     justify-content: center; 
     align-items: center;
 }
 
 body {
-    background-color: #2d2d2d; /* background of the page */
+    background-color: #ffffff; /* background of the page */
 }
 
 .page-content-container {
-    background-color: #2d2d2d; /* background color of the page */
+    background-color: #000000; /* background color of the page */
 }
 
 /* This refers to the image on the top of each page under the page switch buttons. */
@@ -73,10 +85,11 @@ img {
 .page-title {
     position: relative;
     top: 0px;
-
+    padding-top: 10px;
+    padding-bottom: 10px;
     /* Styles the semi-transparent background behind the text */
     opacity: 0.7;
-    background-color: #ffffff;
+    background-color: #ff0000;
     width: 100%;
 
     color: #000000; /* text color */
