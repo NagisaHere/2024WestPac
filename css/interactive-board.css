@@ -3,8 +3,9 @@
     flex-wrap: wrap;
     border: 1px solid #000000; 
     padding: 50px;
+    padding-bottom: 10%;
     width: 70%;
-    height: 300px;
+    height: 400px;
     background-color: #1e1d1d;
     color: #ffffff; /* text color */
     border-radius: 10px; /* rounds off corners */

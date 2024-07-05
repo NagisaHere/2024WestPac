@@ -1,6 +1,7 @@
 .leaderboardContainer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background: #da1710;
     color: white;
     height: 500px;
@@ -8,20 +9,22 @@
 }
 
 .lbtext1 {
+    text-align: center;
     background: #da1710;
     color: white;
     font-size: 26px;
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 100px;
     transform: translateX(-50%);
 }
 
 .lbtext2 {
+    text-align: center;
     background: #da1710;
     color: white;
     font-size:26px;
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 160px;
     transform: translateX(-50%);

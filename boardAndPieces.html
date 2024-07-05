@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/interactive-board.css">
+    <link rel="stylesheet" href="leaderboard.css"/>
+    <link rel="stylesheet" href="styles.css"/>
 
     <style> 
         p { 
@@ -38,6 +40,38 @@
     </style> 
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!--This is a container-->
+        <div class="navbar__container"> 
+            <!-- need to specify length -->
+             <a href="./index.html">
+                <img id="logo" src="./images/Westpac_logo.svg.png" alt="Westpac Logo">
+            </a>
+            <!--A div class and id are just attributes used to target-->
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!--Unordered list (ul), I have no idea what it is used for-->
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="./index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="./boardAndPieces.html" class="navbar__links">Forest</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="./planner.html" class="navbar__links">Planner</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="button">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
     <div class="page-title">
         Welcome to your Forest
     </div>
@@ -247,6 +281,27 @@
             <img src="images/closeButton.png" class="close-icon">
         </button>
     </div>
+
+    <div class="leaderboardContainer">
+        <div class="lbtext1">Leaderboards</div>
+        <div class="lbtext2">Shared goal: Bahamas Trip</div>
+        <div class="lbtextframe" id="goldframe">
+            <div class="lbinfotextleft">Joe</div>
+            <div class="lbinfotextmiddle">$1500/2000</div>
+            <div class="lbinfotextright">Forest Master</div>
+        </div>
+        <div class="lbtextframe" id="silverframe">
+            <div class="lbinfotextleft">You</div>
+            <div class="lbinfotextmiddle">$1000/2000</div>
+            <div class="lbinfotextright">Forest Guardian</div>
+        </div>
+        <div class="lbtextframe" id="bronzeframe">
+            <div class="lbinfotextleft">Bob</div>
+            <div class="lbinfotextmiddle">$500/2000</div>
+            <div class="lbinfotextright">Forest Associate</div>
+        </div>
+    
+    
 
     <script src="js/script.js"></script>
     <script src="js/interactiveboard.js"></script>
