@@ -69,7 +69,7 @@ hardcoded because the tabbed interface kept glitching the original bottom button
 }
 
 .tab-page {
-    border: 1px solid #333; 
+    border: 1px solid #000000; 
     padding: 3%; 
 
     width: 94%;
