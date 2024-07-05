@@ -246,12 +246,15 @@ navbar colour for links are #181b25
 
 .main {
     display: flex;
-    flex-direction: column;
     background: #da1710;
     color: white;
     height: 400px;
 }
 
+.main__description {
+    flex-direction: column;
+    width: 100%;
+}
 .content-container {
     display: flex;
     justify-content: space-between;
@@ -269,6 +272,9 @@ navbar colour for links are #181b25
 
 
 .titletext1 {
+    position: static;
+    margin-top: 50px;
+    margin-left: 50px;
     background: #da1710;
     color: white;
     font-size: 40px;
@@ -285,6 +291,8 @@ navbar colour for links are #181b25
 }
 
 .westpacman {
+    position: absolute;
+    right: 0%;
     width: 490px;
     height: 400px;
 }
@@ -313,6 +321,7 @@ navbar colour for links are #181b25
 }
 
 .intro h1 {
+    padding-top: 40px;
     font-weight: 400;
 }
 
