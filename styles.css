@@ -245,9 +245,11 @@ navbar colour for links are #181b25
 }
 
 .main {
+    display: flex;
+    flex-direction: column;
     background: #da1710;
     color: white;
-    height: 390px;
+    height: 400px;
 }
 
 .titletext1 {
@@ -262,9 +264,10 @@ navbar colour for links are #181b25
 .titletext2 {
     background: #da1710;
     color: white;
-    font-size: 26px;
+    font-size: 20px;
     position: absolute;
-    left: 100px;
+    width: 50%;
+    left: 50px;
     top: 220px;
 }
 
@@ -277,8 +280,8 @@ navbar colour for links are #181b25
 
 .trynowbutton {
     position: absolute;
-    left: 800px;
-    top: 360px;
+    left: 600px;
+    top: 400px;
     width: 160px; /* button width */
     height: 40px;
     padding: 10px 16px; /* padding: y, x */
@@ -293,38 +296,44 @@ navbar colour for links are #181b25
 }
 
 .intro {
+    display: flex;
+    justify-content: center;
     font-size: 32px;
-    position: absolute;
-    left: 40%;
-    top: 520px;
 }
 
-.p1 {
-    font-size: 24px;
-    position: absolute;
-    left: 35%;
-    top: 620px;
+.intro h1 {
+    font-weight: 400;
 }
 
-.p2 {
-    font-size: 24px;
-    position: absolute;
-    left: 35%;
-    top: 820px;
+.description__container {
+    display: flex;
 }
+
+.description__item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+.description__item h1 {
+    font-weight: 400;
+    color: #D03E3E;
+}
+
+.description__item p {
+    margin-top: 30px;
+}
+
 
 .icontree {
-    position: absolute;
-    left: 130px;
-    top: 600px;
+    border-radius: 512px;
     width: 150px;
     height: 150px;
 }
 
 .iconfriends {
-    position: absolute;
-    left: 130px;
-    top: 800px;
+    border-radius: 512px;
     width: 150px;
     height: 150px;
 }
@@ -335,3 +344,7 @@ navbar colour for links are #181b25
     background-color: #da1710;
 }
 
+.footer {
+    margin-top: 1%;
+    margin-left: 10%;
+}
