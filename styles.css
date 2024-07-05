@@ -307,6 +307,7 @@ navbar colour for links are #181b25
 
 .description__container {
     display: flex;
+    margin-top: 3%;
 }
 
 .description__item {
@@ -330,18 +331,23 @@ navbar colour for links are #181b25
     border-radius: 512px;
     width: 150px;
     height: 150px;
+    position: absolute;
+    left: 10%;
 }
 
 .iconfriends {
     border-radius: 512px;
     width: 150px;
     height: 150px;
+    position: absolute;
+    left: 10%;
 }
 
 #footer__line {
     border: none;
     height: 10px; 
     background-color: #da1710;
+    margin-top: 5%;
 }
 
 .footer {
