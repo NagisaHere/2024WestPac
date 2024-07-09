@@ -1,8 +1,8 @@
 # 2024 Westpac Hackathon
 
-Ryan Wang (NagisaHere) - UI designer, Script/Presentation Writer
-ethan-worth - Frontend Programmer
-Flytrap123 - Frontend Programmer
+Ryan Wang (NagisaHere) - UI designer, Script/Presentation Writer<br/>
+ethan-worth - Frontend Programmer<br/>
+Flytrap123 - Frontend Programmer<br/>
 
 Solution: Westpac Forest<br/>
 
