@@ -1,30 +1,14 @@
-# 2024WestPac
-Authors: Ryan Wang, Jackie Cheng, Ethan Worth <br/>
+# 2024 Westpac Hackathon
 
-To Do: <br/>
-~~Finish roadmap/mindmap/diagram of features~~<br/>
-Update PPT presentation as we go <br/>
-~~Figma design if there is time~~ <br/>
-~~Create Navbar~~ ~~Replace word logo with image logo~~ <br/>
-Move navbar__links to center <br/>
-~~Change navbar bg colour to white~~<br/>
-Make navbar_links a bit more center (by like 200-300px???)<br/>
-update hover colour of Sign up button to #e55d58 <br/>
-~~Create Tree~~ actually add the forest <br/>
-- have leaderboard update position when user surpasses a certain amount
-- implement chess feature where icons appear upon click and selection (using js)
-~~Create Dashboard for group activites and payments~~ Aborted <br/>
-Make new goal screen page<br/>
-- title, with slider and date selector integration
-- choices of people (generate icons)
-- chatbase for likelihood of achieving the goal and possible measures
-- goal history
-<br/>
+Ryan Wang (NagisaHere) - UI designer, Script/Presentation Writer
+ethan-worth - Frontend Programmer
+Flytrap123 - Frontend Programmer
+
+Solution: Westpac Forest<br/>
+
+Taking inspiration from the mobile forest application, we have developed a solution called Westpac Forest. Our solution aims to assist people who have the financial capacity to have savings, but may struggle in different areas to save, whether it’d be their spending habits or lack of accountability. First, the user sets goals for what specifically they want to save for, to be mindful of what they are working towards. (originally, we wanted to add a chatbot to assist users to help with setting their goals, which can be integrated with the Westpac banking agent) 
+For every $25 saved (or some user defined amount), users are able to get Forest Points, which can then be used to plant virtual trees. Users are able to share goals and track leaderboard progress of shared saving goals with their friends through a leaderboard. We believe this aligns with Westpac’s values of being helpful; ensuring that the customer has a great banking experience, whilst also keeping things simple. We believe this is a good idea as it encourages people to maintain healthy financial habits. <br/>
 
 
-
-Ryan: Forest + UI Designer
-Jackie: main page + forest (look at chess repo)
-Ethan: main page + goal screen
-
-moved to ryan v2
+Video can be found at: https://youtu.be/9sQTnSiurMc<br/>
+Figma: https://www.figma.com/design/fpKvEhcc940PpsJNTUDGEc/Untitled?node-id=0-1&t=OfFoE3pQVBbnpSiX-1<br/>
